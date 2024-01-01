@@ -23,6 +23,8 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     testImplementation("io.quarkus:quarkus-junit5")
     testImplementation("io.rest-assured:rest-assured")
+    implementation("io.quarkus:quarkus-kubernetes")
+    implementation("io.quarkus:quarkus-container-image-jib")
 }
 
 group = "com.example"
