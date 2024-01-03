@@ -1,0 +1,5 @@
+quarkus:
+  container-image:
+    group: minatorak
+    username: minatorak
+    tag: latest
