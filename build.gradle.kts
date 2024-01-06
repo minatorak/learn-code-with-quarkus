@@ -14,6 +14,8 @@ val quarkusPlatformArtifactId: String by project
 val quarkusPlatformVersion: String by project
 
 dependencies {
+    implementation("io.quarkus:quarkus-reactive-routes")
+    implementation("io.quarkus:quarkus-config-yaml")
     implementation("io.quarkus:quarkus-resteasy-reactive-jackson")
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
     implementation("io.quarkus:quarkus-kotlin")
@@ -22,6 +24,7 @@ dependencies {
     implementation("io.quarkus:quarkus-resteasy-reactive")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     testImplementation("io.quarkus:quarkus-junit5")
+    testImplementation("io.quarkus:quarkus-junit5-mockito")
     testImplementation("io.rest-assured:rest-assured")
     implementation("io.quarkus:quarkus-kubernetes")
     implementation("io.quarkus:quarkus-container-image-jib")

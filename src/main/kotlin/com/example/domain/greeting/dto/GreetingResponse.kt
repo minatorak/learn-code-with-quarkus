@@ -1,4 +1,4 @@
-package com.example.dto
+package com.example.domain.greeting.dto
 
 data class GreetingResponse(
 //    @field:JsonProperty("message")
