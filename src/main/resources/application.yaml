@@ -3,3 +3,5 @@ quarkus:
     group: minatorak
     username: minatorak
     tag: latest
+  http:
+    enable-compression: true
