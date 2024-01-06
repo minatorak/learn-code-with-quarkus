@@ -1,10 +1,8 @@
-package com.example
+package com.example.domain.greeting
 
-import com.example.dto.GreetingRequest
-import com.example.dto.GreetingResponse
-import jakarta.enterprise.inject.build.compatible.spi.Validation
+import com.example.domain.greeting.dto.GreetingRequest
+import com.example.domain.greeting.dto.GreetingResponse
 import jakarta.ws.rs.Consumes
-import jakarta.ws.rs.GET
 import jakarta.ws.rs.PUT
 import jakarta.ws.rs.Path
 import jakarta.ws.rs.Produces
